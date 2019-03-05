@@ -1,7 +1,7 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name -
-
+/*
 public class BlackJackCard extends Card
 {
   	//constructors
@@ -25,4 +25,4 @@ public class BlackJackCard extends Card
   	{
   		return super.toString() + " " + getValue();
   	}
- }
+ }*/

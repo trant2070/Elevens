@@ -10,15 +10,21 @@ public class Card
 			"FIVE","SIX","SEVEN","EIGHT","NINE","TEN","JACK","QUEEN","KING"};
 
 	//instance variables
-		String suit;
-		int face;
+	private String suit;
+        private int face;
+        private String rank;
+	
+        //private String rank;
+        
+        //rank of suit (point value = pointValue)
 
   	//constructors
-        public Card(String s, int f)
+        public Card(String cardSuit, int cardFace) 
         {
-            suit = s;
-            face = f;
-        }
+            
+            suit = cardSuit;
+            face = cardFace;
+	}
         
 
 	// modifiers
@@ -45,5 +51,8 @@ public class Card
         }
 
   	//toString
-
+        public String toString()
+        {
+            return FACES[face] + " of " + suit;
+        }
  }
